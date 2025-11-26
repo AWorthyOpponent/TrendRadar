@@ -253,12 +253,12 @@ def get_beijing_time():
 
 def format_date_folder():
     """格式化日期文件夹"""
-    return get_beijing_time().strftime("%Y年%m月%d日")
+    return get_beijing_time().strftime("%Y%m%d")
 
 
 def format_time_filename():
     """格式化时间文件名"""
-    return get_beijing_time().strftime("%H时%M分")
+    return get_beijing_time().strftime("%H%M")
 
 
 def clean_title(title: str) -> str:
